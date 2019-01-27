@@ -1,0 +1,25 @@
+#title{ 
+  font-family: cursive;
+  background-color: white;
+}
+
+#preview{ 
+  background-image: url(./images/bubbles.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul { 
+  list-style-type: none;
+}
+
+.fa-check-square { 
+  color: #17bebb;
+}
+
+#introButton{ 
+  background-color: #17bebb;
+  border: none;
+  width: 75%;
+  margin: auto;
+}
