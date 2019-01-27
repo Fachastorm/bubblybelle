@@ -23,3 +23,28 @@ ul {
   width: 75%;
   margin: auto;
 }
+
+#featuredOn{ 
+  background-color: lightyellow
+}
+
+.featuredTitle{ 
+ position: relative; 
+ text-align: center; 
+}
+.featuredTitle:before {
+  content: "";
+  display: block;
+  border-top: solid 2px #bebebe;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+}
+.featuredTitle span {
+  background: lightyellow;
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
