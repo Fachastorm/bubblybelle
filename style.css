@@ -31,6 +31,7 @@ ul {
 .featuredTitle{ 
  position: relative; 
  text-align: center; 
+ font-size: .5em
 }
 .featuredTitle:before {
   content: "";
@@ -47,4 +48,54 @@ ul {
   padding: 0 10px;
   position: relative;
   z-index: 1;
+}
+
+#carouselRow{ 
+  background-color: #93b7b3;
+  background-size: 100%;
+}
+
+#carouselTitle{
+  font-size: 1.5em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#carouselButton{ 
+  background-color: #17bebb;
+  border: none;
+  width: 75%;
+  margin: auto;
+}
+
+.bolded{ 
+  font-weight: bold;
+}
+
+.info{ 
+  font-size: 1.2em;
+}
+
+.carousel.carousel-fade .carousel-item {
+  display: block;
+  opacity: 0;
+  transition: opacity ease-out .7s;
+}
+
+.carousel.carousel-fade .carousel-item.active {
+  opacity: 1 !important;
+}
+
+#banner{ 
+  background-image: url(./images/leaves.png)
+}
+
+#banner h1{ 
+  font-size: 1.2em;
+  padding-top: 5%;
+}
+
+#banner p{ 
+  font-size: 1em;
+  font-weight: lighter;
+  padding-bottom: 5%;
 }
