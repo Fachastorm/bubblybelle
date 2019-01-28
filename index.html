@@ -238,7 +238,7 @@
       <div class="row">
         <div class="col-md-4 col-12">
             <div class="card text-center" style="width: auto; height: 100%;">
-                <div class="card-body">
+                <div class="card-body shopCard">
                   <span class="bolded">1 - </span><span>Elit 1</span>
                   <h5 class="card-title mt-3">Commodo</h5>
                   <img src="./images/options/option1.png" alt="option1" class="img-fluid">
@@ -253,7 +253,7 @@
         </div>
         <div class="col-md-4 col-12">
             <div class="card text-center" style="width: auto;">
-                <div class="card-body active">
+                <div class="card-body shopCard active">
                     <div class="ribbon"><span>Excepteur Due</span></div>
                     <span class="bolded ">5 - </span><span>Elit 4</span>
                     <h5 class="card-title mt-3">Mod Tempor</h5>
@@ -270,7 +270,7 @@
         </div>
         <div class="col-md-4 col-12">
             <div class="card text-center" style="width: auto;">
-                <div class="card-body">
+                <div class="card-body shopCard">
                     <div class="ribbon"><span id="ribbon2">Duis Aute</span></div>
                     <span class="bolded">8 - </span><span>Elit 8</span>
                     <h5 class="card-title mt-3">Cillum Dolore</h5>
@@ -312,9 +312,13 @@
                 <div class="col-md-6 mb-2">
 
                   <!--firstName-->
-                  <div class="md-form ">
-                    <input type="text" id="firstName" class="form-control">
+                  <div class="md-form was-validated">
+                    <input type="text" id="firstName" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please type your name.
+                      </div>
                     <label for="firstName" class="">First name</label>
+               
                   </div>
 
                 </div>
@@ -324,8 +328,11 @@
                 <div class="col-md-6 mb-2">
 
                   <!--lastName-->
-                  <div class="md-form">
-                    <input type="text" id="lastName" class="form-control">
+                  <div class="md-form was-validated">
+                    <input type="text" id="lastName" class="form-control" required>
+                    <div class="invalid-feedback">
+                        Please type your last name.
+                      </div>
                     <label for="lastName" class="">Last name</label>
                   </div>
 
@@ -336,14 +343,20 @@
               <!--Grid row-->
 
               <!--email-->
-              <div class="md-form mb-3">
-                <input type="text" id="email" class="form-control" placeholder="youremail@example.com">
-                <label for="email" class="">Email (optional)</label>
+              <div class="md-form mb-3 was-validated">
+                <input type="text" id="email" class="form-control" placeholder="youremail@example.com" required>
+                <div class="invalid-feedback">
+                    Please type your email.
+                  </div>
+                <label for="email" class="">Email</label>
               </div>
 
               <!--address-->
-              <div class="md-form mb-5">
-                <input type="text" id="address" class="form-control" placeholder="1234 Main St">
+              <div class="md-form mb-5 was-validated">
+                <input type="text" id="address" class="form-control" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                    Please include your address.
+                  </div>
                 <label for="address" class="">Address</label>
               </div>
 
@@ -359,7 +372,7 @@
                 <!--Grid column-->
                 <div class="col-lg-4 col-md-12 mb-4">
 
-                  <label for="country">Country</label>
+                  <label for="country was-validated">Country</label>
                   <select class="custom-select d-block w-100" id="country" required>
                     <option value="">Choose...</option>
                     <option>United States</option>
@@ -405,11 +418,11 @@
 
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="same-address">
-                <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+                <label class="custom-control-label" for="same-address">Same as shipping address</label>
               </div>
               <div class="custom-control custom-checkbox">
                 <input type="checkbox" class="custom-control-input" id="save-info">
-                <label class="custom-control-label" for="save-info">Save this information for next time</label>
+                <label class="custom-control-label" for="save-info">Use a different billing address</label>
               </div>
 
               <hr>
@@ -429,7 +442,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 was-validated">
                   <label for="cc-name">Name on card</label>
                   <input type="text" class="form-control" id="cc-name" placeholder="" required>
                   <small class="text-muted">Full name as displayed on card</small>
@@ -437,7 +450,7 @@
                     Name on card is required
                   </div>
                 </div>
-                <div class="col-md-6 mb-3">
+                <div class="col-md-6 mb-3 was-validated">
                   <label for="cc-number">Credit card number</label>
                   <input type="text" class="form-control" id="cc-number" placeholder="" required>
                   <div class="invalid-feedback">
@@ -446,14 +459,14 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3 mb- was-validated">
                   <label for="cc-expiration">Expiration</label>
                   <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
                   <div class="invalid-feedback">
                     Expiration date required
                   </div>
                 </div>
-                <div class="col-md-3 mb-3">
+                <div class="col-md-3 mb-3 was-validated">
                   <label for="cc-expiration">CVV</label>
                   <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
                   <div class="invalid-feedback">

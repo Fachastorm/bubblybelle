@@ -33,7 +33,7 @@
 
 //Toggle Highlight 
 $(document).ready(function(){ 
-  $('.card-body').on('click', function(){
+  $('.shopCard').on('click', function(){
     $('div.active').removeClass('active');
     $(this).toggleClass('active');
   });
