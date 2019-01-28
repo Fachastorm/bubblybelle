@@ -246,7 +246,7 @@
                   <br>
                   <p class="card-text">Nulla $55.55CAD</p>
                   <br>
-                  <a href="#" id="cardBtn1" data-name="Commodo" data-price="55.55" class="btn btn-primary mt-4 ">BUY NOW</a>
+                  <a href="#" id="cardBtn1" data-name="Commodo" data-price="55.55" class="btn btn-primary mt-4 add-to-cart">Add to cart</a>
                 </div>
               </div>
               
@@ -263,7 +263,7 @@
                       <span class="cardSpan"><strike class="offerRed">Orato $440.50CAD</strike> (Nulla 220.00 CAD)</span>
                   </p>
                   
-                  <a href="#" id="cardBtn2" class="btn btn-primary" data-name="Mod Tempor" data-price="220.50">BUY NOW</a>
+                  <a href="#" id="cardBtn2" class="btn btn-primary add-to-cart" data-name="Mod Tempor" data-price="220.50">Add to cart</a>
                 </div>
               </div>
               
@@ -280,7 +280,7 @@
                       <span class="cardSpan"><strike class="offerRed">Orato $440.50CAD</strike> (Nulla 220.00 CAD)</span>
                   </p>
                   
-                  <a href="#" id="cardBtn3" class="btn btn-primary card-button mt-5" data-name="Cillum Dolore" data-price="220.50">BUY NOW</a>
+                  <a href="#" id="cardBtn3" class="btn btn-primary card-button mt-5 add-to-cart" data-name="Cillum Dolore" data-price="220.50">Add to cart</a>
                 </div>
               </div>              
         </div>
@@ -478,43 +478,21 @@
           <!-- Heading -->
           <h4 class="d-flex justify-content-between align-items-center mb-3">
             <span class="text-muted">Your cart</span>
-            <span class="badge badge-secondary badge-pill">3</span>
+            <span class="badge badge-secondary badge-pill totalCount">3</span>
           </h4>
 
           <!-- Cart -->
           <ul class="list-group mb-3 z-depth-1">
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <div>
-                <h6 class="my-0">Product name</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$12</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <div>
-                <h6 class="my-0">Second product</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$8</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between lh-condensed">
-              <div>
-                <h6 class="my-0">Third item</h6>
-                <small class="text-muted">Brief description</small>
-              </div>
-              <span class="text-muted">$5</span>
-            </li>
-            <li class="list-group-item d-flex justify-content-between bg-light">
-              <div class="text-success">
-                <h6 class="my-0">Promo code</h6>
-                <small>EXAMPLECODE</small>
-              </div>
-              <span class="text-success">-$5</span>
-            </li>
+            <div class="items">
+            </div>
             <li class="list-group-item d-flex justify-content-between">
-              <span>Total (USD)</span>
-              <strong>$20</strong>
-            </li>
+                <span>Shipping</span>
+               <strong class="shipping">$10.95</strong>
+               </li>
+            <li class="list-group-item d-flex justify-content-between">
+            <span>Total</span>
+           <strong class="total"></strong>
+           </li>
           </ul>
           <!-- Cart -->
 
