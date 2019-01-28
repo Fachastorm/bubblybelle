@@ -17,7 +17,11 @@
   <!--Main layout-->
   <main>
     <div class="container pt-sm-2" id="preview">
+      <div class="row">
+        <div class="col-12" id="titleDiv">
       <h1 class="text-center mt-sm-3" id="title">Clove&Cactus</h1>
+        </div>
+      </div>
 
       <h2 class="text-center">Lorem? Ipsum!</h2>
       <p class="text-center">Stet postea perfecto ei sed, usu error numquam te!</p>
@@ -184,13 +188,13 @@
       </div>
       <div class="row mt-4 text-center pb-5">
         <div class="col-4 mt-3">
-          <img src="./images/steps/step1.png" alt="">
+          <img src="./images/steps/step1.png" alt="step1" class="img-fluid">
         </div>
         <div class="col-4 mt-3">
-          <img src="./images/steps/step2.png" alt="">
+          <img src="./images/steps/step2.png" alt="step2" class="img-fluid">
         </div>
         <div class="col-4 mt-3">
-          <img src="./images/steps/step3.png" alt="">
+          <img src="./images/steps/step3.png" alt="step3" class="img-fluid">
         </div>
       </div>
       <div class="row">
@@ -220,6 +224,65 @@
       <div class="row text-left mb-5">
         <div class="col-12">
           <img src="./images/testimonials/testimonial3.png" alt="" class="img-fluid">
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="orderOptions">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Perfecto Appelantur Vis An?</h1>
+          <p>An nibh moderatius qui!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-12">
+            <div class="card text-center" style="width: auto; height: 100%;">
+                <div class="card-body">
+                  <span class="bolded">1 - </span><span>Elit 1</span>
+                  <h5 class="card-title mt-3">Commodo</h5>
+                  <img src="./images/options/option1.png" alt="option1" class="img-fluid">
+                  <p></p>
+                  <br>
+                  <p class="card-text">Nulla $55.55CAD</p>
+                  <br>
+                  <a href="#" id="cardBtn1" data-name="Commodo" data-price="55.55" class="btn btn-primary mt-4 ">BUY NOW</a>
+                </div>
+              </div>
+              
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="card text-center" style="width: auto;">
+                <div class="card-body active">
+                    <div class="ribbon"><span>Excepteur Due</span></div>
+                    <span class="bolded ">5 - </span><span>Elit 4</span>
+                    <h5 class="card-title mt-3">Mod Tempor</h5>
+                    <img src="./images/options/option2.png" alt="option1" class="img-fluid">
+                    <p>Excepteur 1, Duis 1</p>
+                  <p class="card-text">$220.50<br>
+                      <span class="cardSpan"><strike class="offerRed">Orato $440.50CAD</strike> (Nulla 220.00 CAD)</span>
+                  </p>
+                  
+                  <a href="#" id="cardBtn2" class="btn btn-primary" data-name="Mod Tempor" data-price="220.50">BUY NOW</a>
+                </div>
+              </div>
+              
+        </div>
+        <div class="col-md-4 col-12">
+            <div class="card text-center" style="width: auto;">
+                <div class="card-body">
+                    <div class="ribbon"><span id="ribbon2">Duis Aute</span></div>
+                    <span class="bolded">8 - </span><span>Elit 8</span>
+                    <h5 class="card-title mt-3">Cillum Dolore</h5>
+                    <img src="./images/options/option3.png" alt="option1" class="img-fluid">
+                    <p>Excepteur 2, Duis 2</p>
+                  <p class="card-text">$220.50<br>
+                      <span class="cardSpan"><strike class="offerRed">Orato $440.50CAD</strike> (Nulla 220.00 CAD)</span>
+                  </p>
+                  
+                  <a href="#" id="cardBtn3" class="btn btn-primary card-button mt-5" data-name="Cillum Dolore" data-price="220.50">BUY NOW</a>
+                </div>
+              </div>              
         </div>
       </div>
     </div>
@@ -272,16 +335,8 @@
               </div>
               <!--Grid row-->
 
-              <!--Username-->
-              <div class="md-form input-group pl-0 mb-5">
-                <div class="input-group-prepend">
-                  <span class="input-group-text" id="basic-addon1">@</span>
-                </div>
-                <input type="text" class="form-control py-0" placeholder="Username" aria-describedby="basic-addon1">
-              </div>
-
               <!--email-->
-              <div class="md-form mb-5">
+              <div class="md-form mb-3">
                 <input type="text" id="email" class="form-control" placeholder="youremail@example.com">
                 <label for="email" class="">Email (optional)</label>
               </div>

@@ -1,5 +1,8 @@
 #title{ 
   font-family: cursive;
+}
+
+#titleDiv{ 
   background-color: white;
 }
 
@@ -85,6 +88,7 @@ ul {
   opacity: 1 !important;
 }
 
+
 #banner{ 
   background-image: url(./images/leaves.png)
 }
@@ -113,6 +117,90 @@ ul {
 #stepsButton{ 
   background-color: #17bebb;
   border: none;
-  width: 30%;
+  width: 45%;
   margin-bottom: 7%;
+}
+
+#orderOptions{ 
+  background-color: lightyellow;
+}
+
+.ribbon {
+  position: absolute;
+  right: -5px; top: -5px;
+  z-index: 1;
+  overflow: hidden;
+  width: 75px; height: 75px;
+  text-align: right;
+}
+.ribbon span {
+  font-size: 8px;
+  font-weight: bold;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  width: 100px;
+  display: block;
+  background: red;
+  box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 19px; right: -21px;
+}
+.ribbon span::before {
+  content: "";
+  position: absolute; left: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid #79A70A;
+  border-right: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+.ribbon span::after {
+  content: "";
+  position: absolute; right: 0px; top: 100%;
+  z-index: -1;
+  border-left: 3px solid transparent;
+  border-right: 3px solid #79A70A;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid #79A70A;
+}
+
+#ribbon2{ 
+  background: teal !important;
+}
+
+#cardBtn1{ 
+  background-color: #17bebb;
+}
+#cardBtn1:hover{ 
+  background-color: maroon;
+}
+#cardBtn2{ 
+  background-color: #17bebb;
+}
+#cardBtn2:hover{ 
+  background-color: maroon;
+}
+#cardBtn3{ 
+  background-color: #17bebb;
+}
+#cardBtn3:hover{ 
+  background-color: maroon;
+}
+
+.active{ 
+  background-color: #cdf6e6;
+  border: 1px teal solid;
+}
+
+.offerRed{ 
+  color: red;
+}
+
+.cardSpan{ 
+  font-size: .3em;
+  text-align: center;
 }
