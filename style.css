@@ -103,3 +103,16 @@ ul {
 #testTitle{ 
   color: #30698c;
 }
+
+#steps{ 
+  background-image: url(./images/steps/stepbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#stepsButton{ 
+  background-color: #17bebb;
+  border: none;
+  width: 30%;
+  margin-bottom: 7%;
+}
