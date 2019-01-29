@@ -1,36 +1,3 @@
-  // function validateForm() {
-  // var name =  document.getElementById('name').value;
-  // if (name == "") {
-  //     document.getElementById('status').innerHTML = "Name cannot be empty";
-  //     return false;
-  // }
-  // var email =  document.getElementById('email').value;
-  // if (email == "") {
-  //     document.getElementById('status').innerHTML = "Email cannot be empty";
-  //     return false;
-  // } else {
-  //     var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  //     if(!re.test(email)){
-  //         document.getElementById('status').innerHTML = "Email format invalid";
-  //         return false;
-  //     }
-  // }
-  // var subject =  document.getElementById('subject').value;
-  // if (subject == "") {
-  //     document.getElementById('status').innerHTML = "Subject cannot be empty";
-  //     return false;
-  // }
-  // var message =  document.getElementById('message').value;
-  // if (message == "") {
-  //     document.getElementById('status').innerHTML = "Message cannot be empty";
-  //     return false;
-  // }
-  // document.getElementById('status').innerHTML = "Sending...";
-  // document.getElementById('contact-form').submit();
-
-  // }
-
-
 //Toggle Highlight 
 $(document).ready(function(){ 
   $('.shopCard').on('click', function(){
@@ -38,6 +5,12 @@ $(document).ready(function(){
     $(this).toggleClass('active');
   });
   });
+
+
+//Billing collapse 
+$('#billing').collapse({
+  toggle: false
+})
 
 
 //Cart
@@ -208,3 +181,54 @@ $('.items').on("click", ".removeItem", function() {
 
 
 displayCart();
+
+//Total 
+const total = shoppingCart.totalCart()
+
+//Total JSON
+const totalCartAmount = {"totalCartAmount":{ 
+  "shipping": 10.99,
+  "value": total, 
+  "currency": 'USD'
+}
+}
+
+//Cart List 
+const shopping = {"cart":{cart}}
+
+//Form JSON
+
+
+
+//Submit Order - POST JSON
+$('#submitOrder').click(function(){ 
+  var formData = ($('#checkoutForm').serializeArray());
+  var customer = {"customer":{}};
+  for (var i=0; i<formData.length; i++) {
+    customer[formData[i].name] = formData[i].value;
+  }
+
+  console.log(customer)
+  console.log(shopping)
+  console.log(totalCartAmount)
+  
+})
+
+//Exit Intent Popup
+function addEvent(obj, evt, fn) {
+  if (obj.addEventListener) {
+      obj.addEventListener(evt, fn, false);
+  }
+  else if (obj.attachEvent) {
+      obj.attachEvent("on" + evt, fn);
+  }
+}
+
+addEvent(document, 'mouseout', function(evt) {
+  if (evt.toElement == null && evt.relatedTarget == null) {
+    if (!sessionStorage.getItem('shown-modal')){
+      $('#popUp').modal('toggle');
+      sessionStorage.setItem('shown-modal', 'true');
+    }
+  }
+});
